@@ -1,0 +1,12 @@
+@charset "UTF-8";
+* {
+    color: #00f;
+    font-size: 50px;
+}
+h1 {
+    background-color: #ff0;
+    font-size: 50px;
+}
+div p{
+    background-color: #eee;
+}
