@@ -13,11 +13,40 @@ body {
   color: #806342;
   background-color: #fff;
 }
-
 /* 各要素の初期スタイル調整 */
+h1, h2{
+  margin-top: 0;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
 
+a{
+  color: #806342;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+p{
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+ul{
+  margin: 1em 0;
+  padding: 0;
+  list-style: none;
+}
+figure{
+  margin: 0;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+address{
+  font-style: normal;
+} 
 /* 初期スタイル調整ここまで */
-
 
 /* --------------------------------------------------
   細部のスタイル指定ここから
@@ -25,51 +54,97 @@ body {
 
 /* ヘッダー */
 .header {
+  width: 1000px;
    /* 横幅の指定 */
+  margin: 0 auto;
    /* 左右中央揃え */
+  padding: 20px 0;
    /* 上下・左右の内余白 */
 }
 
 /* ロゴ */
 .logo {
+  margin: 0;
    /* 上下左右の外余白 */
+  text-align: center;
    /* テキスト中央揃え */
 }
 
 /* メイン */
-
+.main{
+  width: 1000px;
+  margin: 0 auto;
+}
 /* トップ（メインイメージ） */
-
+.top {
+  margin-bottom: 20px;
+  text-align: center;
+}
 /* ナビゲーション */
-
+.nav{
+  margin-bottom: 50px;
+  text-align: center;
+}
 /* ナビリスト */
-
+.nav-list li{
+  display: inline-block;
+  margin: 0;
+  border-left: 1px solid #806342;
+}
+.nav-list li:first-child{
+  border-left: none;
+}
+.nav-list a{
+  display: inline-block;
+  padding: 0 15px;
+  line-height: 1.2px;
+  text-transform: uppercase;
+}
 /* セクション */
-
+.section{
+  margin: 0 auto 80px;
+}
 /* 見出し */
-
+.heading{
+  margin-bottom: 40px;
+  text-align: center;
+}
 /* アバウト */
-
+.about{
+  text-align: center;
+}
 /* メニュー */
-
-
+.menu{
+  text-align: center;
+}
 /* メニューリスト */
 .menu-list {
    /* ul要素の横幅を自動的に定めている */
+  display: inline-block;
    /* 左のマージン */
+  margin-left: 30px;
    /* リストの先頭にリストマーク（・）をつける */
+  list-style: disc;
    /* テキスト左揃え */
+  text-align: left;
 }
 .menu-list li {
    /* 下のマージン */
+  margin-bottom: 10px;
 }
 
 /* フォト */
-
+.photos {
+  width: 750px;
+}
 
 /* フォトリスト */
-
-
+.photos-list li{
+  margin-bottom: 30px;
+}
+.photos figcaption {
+  font-size: 12px;
+}
 /* アクセス */
 .access {
   width: 600px; /* アクセス全体の横幅 */
@@ -78,11 +153,17 @@ body {
 /* アクセス 左右横並び */
 .access-row {
   /* flexbox（横並びにする要素の親に指定） */
-  
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   /* flexboxの中身を左右均等に配置する */
-  
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   /* flexboxの中身の上下を中央揃えにする */
-  
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 0 auto;
 }
 
