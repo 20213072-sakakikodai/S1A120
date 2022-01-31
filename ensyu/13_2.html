@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>animationを使ったアニメーション</title>
-        <style>
-            div{
+        <style type="text/css">
+            div{ 
                 width: 100px;
                 height: 100px;
                 padding:1em;
@@ -16,8 +16,8 @@
             .sample1{animation: zigzag 2s ease 0s 3 normal;}
             @keyframes zigzag {
                 0% {transform: translate(0,0);}
-                50% {transform: translate(50px,0px);}
-                100% {transform: translate(100,0);}
+                50% {transform: translate(50px,50px);}
+                100% {transform: translate(100px,0px);}
             }
             .sample2{ animation:scale-and-color 4s ease 0s infinite alternate;}
             @keyframes scale-and-color {
